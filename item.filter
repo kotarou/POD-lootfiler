@@ -1,12 +1,19 @@
-﻿
-// Kotafilter - A filter for path of diablo
+﻿// Kotafilter - A filter for path of diablo
 // This filter uses content from both synfilter and darkgale, both of whom are amazing.
 // Full credit to them for doing all the initial work.
 // Version: 0.0.1
 // Created by: *Kotarou // Kotarou#0562
 
 //////////////////////////////////////////////////
-// Basic block
+// Stuff for people
+//////////////////////////////////////////////////
+//Bomanski
+ItemDisplay[NMAG !RW (SK141=3 AND SK138=3 AND SK134=3 AND ITEMSTAT92<18) CL2]: %PURPLE%%NAME%%GREEN% {GG} 
+ItemDisplay[NMAG !RW (SK141>0 AND SK138>0 AND SK134>0 AND ITEMSTAT92<18) CL2]: %PURPLE%%NAME%%GREEN% {Almost GG}
+ItemDisplay[NMAG !RW (SK141>0 AND SK138>0 AND ITEMSTAT92<18) CL2]: %PURPLE%%NAME%%GREEN% {Save}
+
+//////////////////////////////////////////////////
+// Basic stuff
 //////////////////////////////////////////////////
 
 //Hide Gold Piles Smaller Than (<) X
