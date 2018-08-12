@@ -3,6 +3,9 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ItemDisplay[xz4]: 
 
+
+//ItemDisplay[]: %NAME% [%CODE%]
+// ItemDisplay[]: %NAME% [%ILVL%] 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // Basics
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -858,7 +861,7 @@ ItemDisplay[!RW NORM NMAG ILVL<15 SOCK>0 ETH (ARMOR OR WEAPON)]: ETH %NAME% [%SO
 ItemDisplay[!RW NORM NMAG ILVL<15 SOCK=0 ETH (ARMOR OR WEAPON)]: ETH %NAME%
 ItemDisplay[!RW NORM NMAG ILVL<15 SOCK>0 (ARMOR OR WEAPON)]: %NAME% [%SOCKETS%]
 ItemDisplay[!RW NORM NMAG ILVL<15 SOCK>0 (ARMOR OR WEAPON)]: %NAME% [%SOCKETS%]
-ItemDisplay[!RW NORM NMAG ILVL<15 (ARMOR OR WEAPON)]: %NAME%
+ItemDisplay[!RW !INF NORM NMAG CLVL<20 ILVL<15 (ARMOR OR WEAPON)]: %NAME%
 ItemDisplay[ILVL<50 SOCK>1 !RW NMAG (ARMOR OR WEAPON)]: %NAME% [%SOCKETS%]
 // ItemDisplay[ILVL<50 SOCK<2 !RW NORM NMAG (ARMOR OR WEAPON)]:
 // ItemDisplay[ILVL>14 SOCK<2 !RW NORM NMAG (ARMOR OR WEAPON)]:
@@ -950,7 +953,7 @@ ItemDisplay[MAG ci0 ci1 ci2 !ID]: %BLUE%%NAME%
 // Hidden: Axe, Mace, Sword, Dagger, Throwing Weapon, Javelin, Spear, Polearm, Bow, Crossbow, 
 // Shown: Staves, Wands, Scepters
 ItemDisplay[MAG WP1 !ID ILVL>25]:
-ItemDisplay[MAG WP2 !ID ILVL>25]:
+ItemDisplay[MAG WP2 !ID ILVL>25]::
 ItemDisplay[MAG WP3 !ID ILVL>25]:
 ItemDisplay[MAG WP4 !ID ILVL>25]:
 ItemDisplay[MAG WP5 !ID ILVL>25]:
@@ -1005,10 +1008,10 @@ ItemDisplay[ETH SOCK=0]: ETH %NAME%
 ItemDisplay[!ETH SOCK>0]: %NAME% %WHITE%[%SOCKETS%]
 
 // Identified items
-ItemDisplay[ID]: %NAME%
+ItemDisplay[(MAG OR RARE) ID]: %NAME%
 
 // Inferior items
-ItemDisplay[INF ILVL<10 !RW !leg]: %NAME%
+ItemDisplay[INF CLVL>10 !RW !leg]:
 ItemDisplay[INF !RW !leg]:
 
 // Shite rare belts
@@ -1681,11 +1684,7 @@ ItemDisplay[NMAG !RW CL4 SOCK>1 ILVL>24]: %NAME% %[SOCKETS]%
 
 // Shite
 ItemDisplay[NMAG SOCK=1 !RW !leg !UNI]:
-
-
-
-// //ItemDisplay[NMAG ILVL>74]:
-// //ItemDisplay[]: %NAME% [%CODE%]
+ItemDisplay[NMAG ILVL>74]:
 
 
 // //Boots
