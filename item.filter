@@ -50,7 +50,7 @@ ItemDisplay[toa]: %PURPLE%Token of Absolution
 // PoD Items
 ItemDisplay[std]: %NAME%
 ItemDisplay[cx5]: %PURPLE%Orb of Corruption
-ItemDisplay[cx6]: %PURPLE%Diablo''s Soulstone
+ItemDisplay[cx6]: %PURPLE%Diablo's Soulstone
 ItemDisplay[cx7]: %RED%* %PURPLE%KEY OF CHAOS%RED% *
 ItemDisplay[cx8]: %RED%* %PURPLE%Orb of Enchantment%RED% *
 ItemDisplay[ma1]: %PURPLE%%NAME%
@@ -102,9 +102,9 @@ ItemDisplay[leg]: %NAME%
 ItemDisplay[pk1]: %PURPLE%Terror [Countess]
 ItemDisplay[pk2]: %PURPLE%Hate [Summoner]
 ItemDisplay[pk3]: %PURPLE%Destruction [Nihlathak]
-ItemDisplay[dhn]: %PURPLE%Diablo''s Horn
-ItemDisplay[bey]: %PURPLE%Baal''s Eye
-ItemDisplay[mbr]: %PURPLE%Mephisto''s Brain
+ItemDisplay[dhn]: %PURPLE%Diablo's Horn
+ItemDisplay[bey]: %PURPLE%Baal's Eye
+ItemDisplay[mbr]: %PURPLE%Mephisto's Brain
 
 // Ear
 ItemDisplay[ear]: %PURPLE% lmao youve rekt %NAME%
@@ -217,7 +217,7 @@ ItemDisplay[skz]: %ORANGE%P SKULL
 
 // Good weapon bases
 ItemDisplay[SUP wax (SOCK==0 OR SOCK==6)]: %RED% lld %DGREEN% Sup. War Axe %GRAY%[%SOCKETS%] 
-ItemDisplay[SUP ETH wax (SOCK==0 OR SOCK==6)]: %PURPLE% lld %DGREEN% Sup. War Axe %GRAY%[%SOCKETS%] 
+ItemDisplay[SUP ETH wax (SOCK==0 OR SOCK==6)]: %PURPLE% lld %DGREEN% ETH Sup. War Axe %GRAY%[%SOCKETS%] 
 
 // Shout helm
 ItemDisplay[CL2 NORM NMAG (SK138>0) !SOCK=1 ]: %RED%lld? %WHITE%Shout helm%GRAY%[%SOCKETS%]
@@ -255,8 +255,8 @@ ItemDisplay[NMAG ETH !RW SOCK=0 gsd]: %GREEN%%NAME% %GRAY%%lld imbue%
 ItemDisplay[NMAG ETH !RW SOCK=0 spk]: %GREEN%%NAME% %GRAY%%lld imbue%
 
 // Uniques
-// Biggin’s bonnet
-ItemDisplay[UNI !ID cap]: %RED%* Biggin’s bonnet%RED% *
+// Biggin's bonnet
+ItemDisplay[UNI !ID cap]: %RED%* Biggin's bonnet%RED% *
 // Pelta Lunata
 ItemDisplay[UNI !ID buc]: %RED%* %PURPLE%Pelta Lunata%RED% *
 // Gnasher hand axe
@@ -270,9 +270,9 @@ ItemDisplay[UNI !ID vgl]: %RED%* Bloodfist%RED% *
 // Sigon
 ItemDisplay[SET !ID (hbt OR hbl OR hgl OR tow OR gth)]: %RED%* Sigons %GREEN%%NAME% %RED% *
 // Death
-ItemDisplay[SET !ID (lgl OR lbl)]: %RED%* %PURPLE%Death’s %GREEN%%NAME%%RED% *
+ItemDisplay[SET !ID (lgl OR lbl)]: %RED%* %PURPLE%Death's %GREEN%%NAME%%RED% *
 // Hsarus'
-ItemDisplay[SET !ID (mbl OR mbt)]: %GRAY%Hsarus’ %GREEN%%NAME%
+ItemDisplay[SET !ID (mbl OR mbt)]: %GRAY%Hsarus' %GREEN%%NAME%
 
 // Druid vlld meatball pelts
 ItemDisplay[CL1 NORM (SK229>1 OR SK225>1)]: %DGREEN%Meatball Pelt %GRAY%[%SOCKETS%]
@@ -301,7 +301,7 @@ ItemDisplay[UNI !ID usk]: %PURPLE%%NAME%
 // Vampire Gaze
 ItemDisplay[UNI !ID xh9]: %PURPLE%%NAME%
 // Arreat's Face
-ItemDisplay[UNI !ID baa]: %RED%* %PURPLE%Arreat''s Face%RED% *
+ItemDisplay[UNI !ID baa]: %RED%* %PURPLE%Arreat's Face%RED% *
 // Jalal's Mane
 ItemDisplay[UNI !ID dra]: %RED%* %PURPLE%%NAME%%RED% *
 // Ravenlore
@@ -421,7 +421,7 @@ ItemDisplay[UNI !ETH !ID xts]: %NAME%
 ItemDisplay[SET !ID xhm]: %RED% G Face
 
 // Trangs Helm
-ItemDisplay[SET !ID uh9]: Trang-Oul''s Helm
+ItemDisplay[SET !ID uh9]: Trang-Oul's Helm
 
 // Tal Rasha Armour
 ItemDisplay[SET !ETH !ID uth]: %RED%* %PURPLE%Tal Armour%RED% *
@@ -429,12 +429,12 @@ ItemDisplay[SET !ETH !ID uth]: %RED%* %PURPLE%Tal Armour%RED% *
 ItemDisplay[SET !ETH !ID uar]: %RED%* %PURPLE%IK Armour%RED% *
 
 // Naj's Chest
-ItemDisplay[SET !ETH !ID ult]: Naj''s Plate
+ItemDisplay[SET !ETH !ID ult]: Naj's Plate
 // Najs staff
-ItemDisplay[SET !ETH !ID 6cs]: Naj''s Staff
+ItemDisplay[SET !ETH !ID 6cs]: Naj's Staff
 
 // Aldur's
-ItemDisplay[SET !ETH !ID xtb]:  %RED%* %DGREEN%Aldur''s Boots%RED% *
+ItemDisplay[SET !ETH !ID xtb]:  %RED%* %DGREEN%Aldur's Boots%RED% *
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // Unique Rings, Amulets, Jewel, Charms
