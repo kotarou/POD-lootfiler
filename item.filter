@@ -218,6 +218,7 @@ ItemDisplay[skz]: %ORANGE%P SKULL
 // Good weapon bases
 ItemDisplay[SUP wax (SOCK==0 OR SOCK==6)]: %RED% lld %DGREEN% Sup. War Axe %GRAY%[%SOCKETS%] 
 ItemDisplay[SUP ETH wax (SOCK==0 OR SOCK==6)]: %PURPLE% lld %DGREEN% ETH Sup. War Axe %GRAY%[%SOCKETS%] 
+ItemDisplay[SUP ED>12 (btl OR 9cs) SOCK=3]: %RED% lld %DGREEN% Sup. Blade Talons %GRAY%[%SOCKETS%] 
 
 // Shout helm
 ItemDisplay[CL2 NORM NMAG (SK138>0) !SOCK=1 ]: %RED%lld? %WHITE%Shout helm%GRAY%[%SOCKETS%]
@@ -232,9 +233,12 @@ ItemDisplay[SUP ED>10 !ETH (SOCK=0 OR SOCK=3) (msk OR crn)]: %RED%lld %WHITE%%NA
 
 // Corruptable dueling rares 
 // - armour
-ItemDisplay[!ETH RARE !ID (brs OR ltp OR aar OR gth)]: %RED%lld? %YELLOW%%NAME%
+ItemDisplay[!ETH !ID RARE (brs OR ltp OR aar OR gth)]: %RED%lld? %YELLOW%%NAME%
 // - shields
-ItemDisplay[!ETH RARE (spk OR tow OR bsh)]: %RED%lld? %YELLOW%%NAME%
+ItemDisplay[!ETH !ID RARE (spk OR tow OR bsh)]: %RED%lld? %YELLOW%%NAME%
+// - assassin claws
+ItemDisplay[!ETH !ID RARE (btl OR 9cs)]: %RED%lld? %YELLOW%%NAME%
+
 
 // Assorted imbueable dueling items
 // ETH throwing spear
@@ -257,6 +261,8 @@ ItemDisplay[NMAG ETH !RW SOCK=0 spk]: %GREEN%%NAME% %GRAY%%lld imbue%
 // Uniques
 // Biggin's bonnet
 ItemDisplay[UNI !ID cap]: %RED%* Biggin's bonnet%RED% *
+// Twitchthroe
+ItemDisplay[UNI !ID stu]: %RED%* Twitchthroe%RED% *
 // Pelta Lunata
 ItemDisplay[UNI !ID buc]: %RED%* %PURPLE%Pelta Lunata%RED% *
 // Umbral disk
@@ -267,6 +273,10 @@ ItemDisplay[UNI !ID spk]: %RED%* Swordback Hold%RED% *
 ItemDisplay[UNI !ID hax]: %RED%* %PURPLE%Gnasher axe%RED% *
 // Crushflange
 ItemDisplay[UNI !ID mac]: %RED%* %Crushflange%RED% *
+// Bonesnap
+ItemDisplay[UNI !ID mau]: %RED%* Bonesnap%RED% *
+// Rogue's bow
+ItemDisplay[UNI !ID cbw]: %RED%* Rogue's Bow%RED% *
 // Bloodfist
 ItemDisplay[UNI !ID vgl]: %RED%* Bloodfist%RED% *
 
@@ -279,13 +289,13 @@ ItemDisplay[SET !ID (lgl OR lbl)]: %RED%* %PURPLE%Death's %GREEN%%NAME%%RED% *
 ItemDisplay[SET !ID (mbl OR mbt)]: %GRAY%Hsarus' %GREEN%%NAME%
 // Cleglaw's
 ItemDisplay[SET !ID lsd]:  %RED%* Cleglaw's %GREEN%%NAME% %RED% *
-
+// Whistan's
+ItemDisplay[SET !ID xml]:  %RED%* Whistans's %GREEN%%NAME% %RED% *
 
 // Druid vlld meatball pelts
 ItemDisplay[CL1 NORM SK229>2 SK225>2]: %PURPLE%Meatball Pelt %GRAY%[%SOCKETS%] 
 ItemDisplay[CL1 NORM SK229>1 SK225>1]: %RED%Meatball Pelt %GRAY%[%SOCKETS%]
 ItemDisplay[CL1 NORM (SK229>1 OR SK225>1)]: %DGREEN%Meatball Pelt %GRAY%[%SOCKETS%]
-
 
 // Paladin Shields - high res or good tohit
 ItemDisplay[CL3 NMAG NORM (RES>20 OR ITEMSTAT19>60) SOCK!=1 SOCK!=2]: %DGREEN%%NAME% %WHITE%[%SOCKETS%] 
