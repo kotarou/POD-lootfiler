@@ -223,12 +223,12 @@ ItemDisplay[SUP ETH wax (SOCK==0 OR SOCK==6)]: %PURPLE% lld %DGREEN% Sup. War Ax
 ItemDisplay[CL2 NORM NMAG (SK138>0) !SOCK=1 ]: %RED%lld? %WHITE%Shout helm%GRAY%[%SOCKETS%]
 
 // Duelling armours
-ItemDisplay[SUP DEF>250 (SOCK=0 OR SOCK=4) aar]: %RED%lld %WHITE%%NAME% %GRAY%[%SOCKETS%]
+ItemDisplay[SUP DEF>249 (SOCK=0 OR SOCK=4) aar]: %RED%lld %WHITE%%NAME% %GRAY%[%SOCKETS%]
+ItemDisplay[SUP DEF>149 (SOCK=0 OR SOCK=4) gth]: %RED%lld %WHITE%%NAME% %GRAY%[%SOCKETS%]
 ItemDisplay[SUP ED=15 (SOCK=0 OR SOCK=3) (brs OR ltp)]: %RED%lld %WHITE%%NAME% %GRAY%[%SOCKETS%]
 
 // Duelling helms
-ItemDisplay[SUP ED>12 !ETH (SOCK=0 OR SOCK=3) (msk OR crn)]: %RED%lld %WHITE%%NAME% %GRAY%[%SOCKETS%]
-
+ItemDisplay[SUP ED>10 !ETH (SOCK=0 OR SOCK=3) (msk OR crn)]: %RED%lld %WHITE%%NAME% %GRAY%[%SOCKETS%]
 
 // Corruptable duelling rares
 ItemDisplay[RARE !ID (brs OR ltp OR aar OR gth)]:  %RED%lld? %YELLOW%%NAME%
@@ -251,15 +251,15 @@ ItemDisplay[NMAG ETH !RW SOCK=0 gsd]: %GREEN%%NAME% %GRAY%%lld imbue%
 
 // Uniques
 // Biggin’s bonnet
-ItemDisplay[UNI !ID cap]: %RED%* %PURPLE%Biggin’s bonnet%RED% *
+ItemDisplay[UNI !ID cap]: %RED%* Biggin’s bonnet%RED% *
 // Pelta Lunata
 ItemDisplay[UNI !ID buc]: %RED%* %PURPLE%Pelta Lunata%RED% *
 // Gnasher hand axe
 ItemDisplay[UNI !ID hax]: %RED%* %PURPLE%Gnasher axe%RED% *
 // Crushflange
-ItemDisplay[UNI !ID mac]: %RED%* %PURPLE%Crushflange%RED% *
+ItemDisplay[UNI !ID mac]: %RED%* %Crushflange%RED% *
 // Bloodfist
-ItemDisplay[UNI !ID vgl]: %RED%* %PURPLE%Bloodfist%RED% *
+ItemDisplay[UNI !ID vgl]: %RED%* Bloodfist%RED% *
 
 // Sets
 // Sigon
