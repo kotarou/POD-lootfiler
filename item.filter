@@ -212,7 +212,7 @@ ItemDisplay[gpy]: %ORANGE%P TOPAZ
 ItemDisplay[skz]: %ORANGE%P SKULL
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////
-// Duelling
+// Dueling
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 // Good weapon bases
@@ -222,18 +222,20 @@ ItemDisplay[SUP ETH wax (SOCK==0 OR SOCK==6)]: %PURPLE% lld %DGREEN% Sup. War Ax
 // Shout helm
 ItemDisplay[CL2 NORM NMAG (SK138>0) !SOCK=1 ]: %RED%lld? %WHITE%Shout helm%GRAY%[%SOCKETS%]
 
-// Duelling armours
+// Dueling armours
 ItemDisplay[SUP DEF>249 (SOCK=0 OR SOCK=4) aar]: %RED%lld %WHITE%%NAME% %GRAY%[%SOCKETS%]
 ItemDisplay[SUP DEF>149 (SOCK=0 OR SOCK=4) gth]: %RED%lld %WHITE%%NAME% %GRAY%[%SOCKETS%]
 ItemDisplay[SUP ED=15 (SOCK=0 OR SOCK=3) (brs OR ltp)]: %RED%lld %WHITE%%NAME% %GRAY%[%SOCKETS%]
 
-// Duelling helms
+// Dueling helms
 ItemDisplay[SUP ED>10 !ETH (SOCK=0 OR SOCK=3) (msk OR crn)]: %RED%lld %WHITE%%NAME% %GRAY%[%SOCKETS%]
 
-// Corruptable duelling rares
-ItemDisplay[RARE !ID (brs OR ltp OR aar OR gth)]:  %RED%lld? %YELLOW%%NAME%
+// Corruptable dueling rares - armour
+ItemDisplay[!ETH RARE !ID (brs OR ltp OR aar OR gth)]: %RED%lld? %YELLOW%%NAME%
+// - shields
+ItemDisplay[!ETH RARE (spk OR tow OR bsh)]: %RED%lld? %YELLOW%%NAME%
 
-// Assorted imbueable duelling items
+// Assorted imbueable dueling items
 // ETH throwing spear
 ItemDisplay[NMAG ETH !RW tsp]: %GREEN%%NAME% %GRAY%%lld imbue%
 // ETH crown
@@ -248,6 +250,8 @@ ItemDisplay[NMAG ETH !RW SOCK=0 btl]: %GREEN%%NAME% %GRAY%%lld imbue%
 ItemDisplay[NMAG ETH !RW SOCK=0 flb]: %GREEN%%NAME% %GRAY%%lld imbue%
 // ETH great sword
 ItemDisplay[NMAG ETH !RW SOCK=0 gsd]: %GREEN%%NAME% %GRAY%%lld imbue%
+// ETH spiked shield for smiter
+ItemDisplay[NMAG ETH !RW SOCK=0 spk]: %GREEN%%NAME% %GRAY%%lld imbue%
 
 // Uniques
 // Biggin’s bonnet
@@ -273,6 +277,10 @@ ItemDisplay[SET !ID (mbl OR mbt)]: %GRAY%Hsarus’ %GREEN%%NAME%
 ItemDisplay[CL1 NORM (SK229>1 OR SK225>1)]: %DGREEN%Meatball Pelt %GRAY%[%SOCKETS%]
 ItemDisplay[CL1 NORM SK229>1 SK225>1]: %RED%Meatball Pelt %GRAY%[%SOCKETS%]
 ItemDisplay[CL1 NORM SK229>2 SK225>2]: %PURPLE%Meatball Pelt %GRAY%[%SOCKETS%] 
+
+// Paladin Shields - high res or good tohit
+ItemDisplay[CL3 NMAG NORM (RES>20 OR ITEMSTAT19>60) SOCK!=1 SOCK!=2]: %DGREEN%%NAME% %WHITE%[%SOCKETS%] 
+
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // Uniques - Helms
