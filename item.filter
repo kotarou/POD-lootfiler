@@ -275,9 +275,10 @@ ItemDisplay[SET !ID (lgl OR lbl)]: %RED%* %PURPLE%Death's %GREEN%%NAME%%RED% *
 ItemDisplay[SET !ID (mbl OR mbt)]: %GRAY%Hsarus' %GREEN%%NAME%
 
 // Druid vlld meatball pelts
-ItemDisplay[CL1 NORM (SK229>1 OR SK225>1)]: %DGREEN%Meatball Pelt %GRAY%[%SOCKETS%]
-ItemDisplay[CL1 NORM SK229>1 SK225>1]: %RED%Meatball Pelt %GRAY%[%SOCKETS%]
 ItemDisplay[CL1 NORM SK229>2 SK225>2]: %PURPLE%Meatball Pelt %GRAY%[%SOCKETS%] 
+ItemDisplay[CL1 NORM SK229>1 SK225>1]: %RED%Meatball Pelt %GRAY%[%SOCKETS%]
+ItemDisplay[CL1 NORM (SK229>1 OR SK225>1)]: %DGREEN%Meatball Pelt %GRAY%[%SOCKETS%]
+
 
 // Paladin Shields - high res or good tohit
 ItemDisplay[CL3 NMAG NORM (RES>20 OR ITEMSTAT19>60) SOCK!=1 SOCK!=2]: %DGREEN%%NAME% %WHITE%[%SOCKETS%] 
