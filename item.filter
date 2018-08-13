@@ -169,10 +169,10 @@ ItemDisplay[gfr CLVL<30]: flawed ruby
 ItemDisplay[gfb CLVL<30]: flawed sapphire
 ItemDisplay[gfy CLVL<30]: flawed topaz
 ItemDisplay[skf CLVL<30]: flawed skull
-ItemDisplay[gfv CLVL>29]:
-ItemDisplay[gfw CLVL>29]:
+//ItemDisplay[gfv CLVL>29]:
+//ItemDisplay[gfw CLVL>29]:
 ItemDisplay[gfg CLVL>29]:
-ItemDisplay[gfr CLVL>29]:
+//ItemDisplay[gfr CLVL>29]:
 ItemDisplay[gfb CLVL>29]:
 ItemDisplay[gfy CLVL>29]:
 ItemDisplay[skf CLVL>29]:
