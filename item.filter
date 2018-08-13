@@ -259,6 +259,10 @@ ItemDisplay[NMAG ETH !RW SOCK=0 spk]: %GREEN%%NAME% %GRAY%%lld imbue%
 ItemDisplay[UNI !ID cap]: %RED%* Biggin's bonnet%RED% *
 // Pelta Lunata
 ItemDisplay[UNI !ID buc]: %RED%* %PURPLE%Pelta Lunata%RED% *
+// Umbral disk
+ItemDisplay[UNI !ID sml]: %RED%* %PURPLE%Umbral Disk%RED% *
+// Swordback hold
+ItemDisplay[UNI !ID spk]: %RED%* Swordback Hold%RED% *
 // Gnasher hand axe
 ItemDisplay[UNI !ID hax]: %RED%* %PURPLE%Gnasher axe%RED% *
 // Crushflange
@@ -273,6 +277,9 @@ ItemDisplay[SET !ID (hbt OR hbl OR hgl OR tow OR gth)]: %RED%* Sigons %GREEN%%NA
 ItemDisplay[SET !ID (lgl OR lbl)]: %RED%* %PURPLE%Death's %GREEN%%NAME%%RED% *
 // Hsarus'
 ItemDisplay[SET !ID (mbl OR mbt)]: %GRAY%Hsarus' %GREEN%%NAME%
+// Cleglaw's
+ItemDisplay[SET !ID lsd]:  %RED%* Cleglaw's %GREEN%%NAME% %RED% *
+
 
 // Druid vlld meatball pelts
 ItemDisplay[CL1 NORM SK229>2 SK225>2]: %PURPLE%Meatball Pelt %GRAY%[%SOCKETS%] 
