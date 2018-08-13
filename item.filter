@@ -283,7 +283,7 @@ ItemDisplay[CL1 NORM SK229>2 SK225>2]: %PURPLE%Meatball Pelt %GRAY%[%SOCKETS%]
 ItemDisplay[CL3 NMAG NORM (RES>20 OR ITEMSTAT19>60) SOCK!=1 SOCK!=2]: %DGREEN%%NAME% %WHITE%[%SOCKETS%] 
 
 // vlld shoppables
-// - Vulpine Bone Shield of Delflecting
+// - Vulpine Bone Shield of Deflecting
 ItemDisplay[MAG bsh ITEMSTAT114>6 ITEMSTAT102=30]: %RED%* %PURPLE%VBOD %RED%*
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////
