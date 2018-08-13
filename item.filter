@@ -230,7 +230,8 @@ ItemDisplay[SUP ED=15 (SOCK=0 OR SOCK=3) (brs OR ltp)]: %RED%lld %WHITE%%NAME% %
 // Dueling helms
 ItemDisplay[SUP ED>10 !ETH (SOCK=0 OR SOCK=3) (msk OR crn)]: %RED%lld %WHITE%%NAME% %GRAY%[%SOCKETS%]
 
-// Corruptable dueling rares - armour
+// Corruptable dueling rares 
+// - armour
 ItemDisplay[!ETH RARE !ID (brs OR ltp OR aar OR gth)]: %RED%lld? %YELLOW%%NAME%
 // - shields
 ItemDisplay[!ETH RARE (spk OR tow OR bsh)]: %RED%lld? %YELLOW%%NAME%
@@ -281,6 +282,9 @@ ItemDisplay[CL1 NORM SK229>2 SK225>2]: %PURPLE%Meatball Pelt %GRAY%[%SOCKETS%]
 // Paladin Shields - high res or good tohit
 ItemDisplay[CL3 NMAG NORM (RES>20 OR ITEMSTAT19>60) SOCK!=1 SOCK!=2]: %DGREEN%%NAME% %WHITE%[%SOCKETS%] 
 
+// vlld shoppables
+// - Vulpine Bone Shield of Delflecting
+ItemDisplay[MAG bsh ITEMSTAT114>6 ITEMSTAT102=30]: %RED%* %PURPLE%VBOD %RED%*
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // Uniques - Helms
