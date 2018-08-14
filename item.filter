@@ -239,7 +239,6 @@ ItemDisplay[!ETH !ID RARE (spk OR tow OR bsh)]: %RED%lld? %YELLOW%%NAME%
 // - assassin claws
 ItemDisplay[!ETH !ID RARE (btl OR 9cs)]: %RED%lld? %YELLOW%%NAME%
 
-
 // Assorted imbueable dueling items
 // ETH throwing spear
 ItemDisplay[NMAG ETH !RW tsp]: %GREEN%%NAME% %GRAY%%lld imbue%
@@ -300,6 +299,9 @@ ItemDisplay[CL1 NORM (SK229>1 OR SK225>1)]: %DGREEN%Meatball Pelt %GRAY%[%SOCKET
 // Paladin Shields - high res or good tohit
 ItemDisplay[CL3 NMAG NORM (RES>20 OR ITEMSTAT19>60) SOCK!=1 SOCK!=2]: %DGREEN%%NAME% %WHITE%[%SOCKETS%] 
 
+// Barb hem general
+ItemDisplay[CL2 NMAG ILVL<25 !SOCK=1]: %NAME%%GRAY%[%SOCKETS%]
+
 // vlld shoppables
 // - Vulpine Bone Shield of Deflecting
 ItemDisplay[MAG bsh ITEMSTAT114>6 ITEMSTAT102=30]: %RED%* %PURPLE%VBOD %RED%*
@@ -338,7 +340,7 @@ ItemDisplay[UNI !ID xrs]: %NAME%
 // Shaftstop
 ItemDisplay[UNI !ETH !ID xhn]: %NAME%
 // ETH Shaftstop 
-ItemDisplay[UNI !ID xhn]: %ETH% %PURPLE%%NAME%
+ItemDisplay[UNI !ID xhn]: ETH %PURPLE%%NAME%
 // Tyrael's Might
 ItemDisplay[UNI !ETH !ID uar]: %PURPLE%%NAME%
 // Guardian Angel
@@ -469,7 +471,7 @@ ItemDisplay[UNI (cm1 OR cm2 OR cm3)]: %NAME%
 ItemDisplay[SET !ID amu]: Set Amulet
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////
-// Unique & Socket catchall
+// Unique & Socket catchall / catchall p1
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ItemDisplay[UNI ETH SOCK>0 !ID]: ETH %NAME% [%SOCKETS%]
 ItemDisplay[SET ETH SOCK>0 !ID]: ETH %NAME% [%SOCKETS%]
@@ -487,6 +489,10 @@ ItemDisplay[UNI SOCK>0]: %NAME% [%SOCKETS%]
 ItemDisplay[SET SOCK>0]: %NAME% [%SOCKETS%]
 ItemDisplay[UNI]: %NAME%
 ItemDisplay[SET]: %NAME%
+
+
+// Runewords
+ItemDisplay[RW]: %NAME%
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // Rings, Amulets, Jewel, Charms
@@ -890,7 +896,7 @@ ItemDisplay[NMAG SOCK=2 !ETH xh9 ILVL<45]: %NAME% [%SOCKETS%]
 ItemDisplay[(amb OR amc) SOCK=3 NMAG]: %DGREEN%%NAME% %GRAY%[%SOCKETS%]
 
 // Generic
-ItemDisplay[RARE ILVL<20]: %NAME%
+ItemDisplay[RARE ILVL<50]: %NAME%
 ItemDisplay[!RW NORM NMAG ILVL<15 SOCK>0 ETH (ARMOR OR WEAPON)]: ETH %NAME% [%SOCKETS%]
 ItemDisplay[!RW NORM NMAG ILVL<15 SOCK=0 ETH (ARMOR OR WEAPON)]: ETH %NAME%
 ItemDisplay[!RW NORM NMAG ILVL<15 SOCK>0 (ARMOR OR WEAPON)]: %NAME% [%SOCKETS%]
@@ -1032,14 +1038,6 @@ ItemDisplay[cq2 SET ILVL>60]: %NAME%
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // Overall catchall
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-// Runewords
-ItemDisplay[RW]: %NAME%
-
-// Socketed / Eth displays
-ItemDisplay[ETH SOCK>0]: ETH %NAME% %WHITE%[%SOCKETS%]
-ItemDisplay[ETH SOCK=0]: ETH %NAME%
-ItemDisplay[!ETH SOCK>0]: %NAME% %WHITE%[%SOCKETS%]
 
 // Identified items
 ItemDisplay[(MAG OR RARE) ID]: %NAME%
@@ -1656,13 +1654,13 @@ ItemDisplay[NMAG !RW ILVL>26 amf]:
 ItemDisplay[NMAG !RW CL4 ILVL>24 !SOCK=1 (SK84>2 OR SK67>2 OR SK92>2)]: %DGREEN%%NAME%
 ItemDisplay[NMAG !RW CL4 SOCK=1 ILVL>24]:
 ItemDisplay[NMAG !RW CL4 ETH ILVL>24]:
-ItemDisplay[NMAG !RW CL4 SOCK=1 ILVL<25]: %NAME% %[SOCKETS]%
-ItemDisplay[NMAG !RW CL4 SOCK=2 !ETH ILVL>24]: %NAME% %[SOCKETS]%
+ItemDisplay[NMAG !RW CL4 SOCK=1 ILVL<25]: %NAME% [%SOCKETS%]
+ItemDisplay[NMAG !RW CL4 SOCK=2 !ETH ILVL>24]: %NAME% [%SOCKETS%]
 
 // Sorceress Orbs
 ItemDisplay[NMAG !RW CL4 SOCK=1 ILVL>24]:
-ItemDisplay[NMAG !RW CL4 SOCK=1 ILVL<25]: %NAME% %[SOCKETS]%
-ItemDisplay[NMAG !RW CL4 SOCK>1 ILVL>24]: %NAME% %[SOCKETS]%
+ItemDisplay[NMAG !RW CL4 SOCK=1 ILVL<25]: %NAME% [%SOCKETS%]
+ItemDisplay[NMAG !RW CL4 SOCK>1 ILVL>24]: %NAME% [%SOCKETS%]
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // ???
@@ -1697,6 +1695,12 @@ ItemDisplay[NMAG !RW CL4 SOCK>1 ILVL>24]: %NAME% %[SOCKETS]%
 // Cleanup
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // ItemDisplay[]: %NAME%
+
+
+// Socketed / Eth displays
+ItemDisplay[ETH SOCK>0]: ETH %NAME% %WHITE%[%SOCKETS%]
+ItemDisplay[ETH SOCK=0]: ETH %NAME%
+ItemDisplay[!ETH SOCK>0]: %NAME% %WHITE%[%SOCKETS%]
 
 // // Hide staves, wands, scepters, heads, orbs unless they get explicitly shown
 // ItemDisplay[NMAG WP11]: 
