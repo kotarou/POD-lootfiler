@@ -216,8 +216,8 @@ ItemDisplay[skz]: %ORANGE%P SKULL
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 // Good weapon bases
-ItemDisplay[SUP wax (SOCK==0 OR SOCK==6)]: %RED% lld %DGREEN% Sup. War Axe %GRAY%[%SOCKETS%] 
-ItemDisplay[SUP ETH wax (SOCK==0 OR SOCK==6)]: %PURPLE% lld %DGREEN% ETH Sup. War Axe %GRAY%[%SOCKETS%] 
+ItemDisplay[SUP wax (SOCK=0 OR SOCK=6)]: %RED% lld %DGREEN% Sup. War Axe %GRAY%[%SOCKETS%] 
+ItemDisplay[SUP ETH wax (SOCK=0 OR SOCK=6)]: %PURPLE% lld %DGREEN% ETH Sup. War Axe %GRAY%[%SOCKETS%] 
 ItemDisplay[SUP ED>12 (btl OR 9cs) SOCK=3]: %RED% lld %DGREEN% Sup. Blade Talons %GRAY%[%SOCKETS%] 
 
 // Shout helm
