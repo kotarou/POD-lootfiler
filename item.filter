@@ -1058,8 +1058,8 @@ ItemDisplay[RARE lbl !ID CLVL>40]:
 ItemDisplay[NMAG !RW ILVL>14 hax]:
 ItemDisplay[NMAG !RW ILVL>14 axe]:
 ItemDisplay[NMAG !RW ILVL>14 2ax]:
-ItemDisplay[NMAG !RW ILVL>14 mpi]:
-// ItemDisplay[NMAG !RW ILVL>14 wax]:
+ItemDisplay[NMAG !RW ILVL>14 mpi SOCK<6 SOCK>0]:
+ItemDisplay[NMAG !RW ILVL>14 wax SOCK<6 SOCK>0]:
 ItemDisplay[NMAG !RW ILVL>14 lax]:
 ItemDisplay[NMAG !RW ILVL>14 bax]:
 ItemDisplay[NMAG !RW ILVL>14 btx]:
@@ -1100,7 +1100,7 @@ ItemDisplay[NMAG !RW ILVL>14 clb]:
 ItemDisplay[NMAG !RW ILVL>14 spc]:
 ItemDisplay[NMAG !RW ILVL>14 mac]:
 ItemDisplay[NMAG !RW ILVL>14 mst]:
-// ItemDisplay[NMAG !RW ILVL>14 fla]:
+ItemDisplay[NMAG !RW ILVL>14 fla SOCK>0 SOCK<6]:
 ItemDisplay[NMAG !RW ILVL>14 whm]:
 ItemDisplay[NMAG !RW ILVL>14 mau]:
 ItemDisplay[NMAG !RW ILVL>14 gma]:
