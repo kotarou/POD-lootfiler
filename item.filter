@@ -297,7 +297,7 @@ ItemDisplay[CL1 NORM SK229>1 SK225>1]: %RED%Meatball Pelt %GRAY%[%SOCKETS%]
 ItemDisplay[CL1 NORM (SK229>1 OR SK225>1)]: %DGREEN%Meatball Pelt %GRAY%[%SOCKETS%]
 
 // Paladin Shields - high res or good tohit
-ItemDisplay[CL3 NMAG NORM (RES>20 OR ITEMSTAT19>60) SOCK!=1 SOCK!=2]: %DGREEN%%NAME% %WHITE%[%SOCKETS%] 
+ItemDisplay[CL3 NMAG NORM (RES>20 OR ITEMSTAT19>60) !SOCK=1 !SOCK=2]: %DGREEN%%NAME% %WHITE%[%SOCKETS%] 
 
 // Barb hem general
 ItemDisplay[CL2 NMAG ILVL<25 !SOCK=1]: %NAME%%GRAY%[%SOCKETS%]
@@ -1282,11 +1282,11 @@ ItemDisplay[NMAG !RW ILVL>14 SOCK<4 9h9]:
 ItemDisplay[NMAG !RW ILVL>14 SOCK<4 9wc]:
 
 ItemDisplay[NMAG !RW ILVL>14 7o7]:
-ItemDisplay[NMAG !RW ILVL>14 SOCK<4 SOCK!=0 7vo]:
-ItemDisplay[NMAG !RW ILVL>14 SOCK<4 SOCK!=0 7s8]:
-ItemDisplay[NMAG !RW ILVL>14 SOCK<4 SOCK!=0 7pa]:
-ItemDisplay[NMAG !RW ILVL>14 SOCK<4 SOCK!=0 7h7]:
-ItemDisplay[NMAG !RW ILVL>14 SOCK<4 SOCK!=0 7wc]:
+ItemDisplay[NMAG !RW ILVL>14 SOCK<4 SOCK>0 7vo]:
+ItemDisplay[NMAG !RW ILVL>14 SOCK<4 SOCK>0 7s8]:
+ItemDisplay[NMAG !RW ILVL>14 SOCK<4 SOCK>0 7pa]:
+ItemDisplay[NMAG !RW ILVL>14 SOCK<4 SOCK>0 7h7]:
+ItemDisplay[NMAG !RW ILVL>14 SOCK<4 SOCK>0 7wc]:
 
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -1389,7 +1389,7 @@ ItemDisplay[NMAG !RW ILVL>44 plt]:
 ItemDisplay[NMAG !RW ILVL>44 fld]:
 ItemDisplay[NMAG !RW ILVL>44 gth]:
 ItemDisplay[NMAG !RW ILVL>44 ful]:
-ItemDisplay[NMAG !RW ILVL>44 SOCK!=1 SOCK<4 aar]:
+ItemDisplay[NMAG !RW ILVL>44 !SOCK=1 SOCK<4 aar]:
 ItemDisplay[NMAG !RW ILVL>44 SOCK<3 ltp]:
 
 // Exceptional high ilvl
@@ -1440,7 +1440,7 @@ ItemDisplay[NMAG !RW ILVL<45 plt]:
 ItemDisplay[NMAG !RW ILVL<45 fld]:
 ItemDisplay[NMAG !RW ILVL<45 gth]:
 ItemDisplay[NMAG !RW ILVL<45 ful]:
-ItemDisplay[NMAG !RW ILVL<45 SOCK!=1 SOCK<4 aar]:
+ItemDisplay[NMAG !RW ILVL<45 !SOCK=1 SOCK<4 aar]:
 ItemDisplay[NMAG !RW ILVL<45 SOCK<3 ltp]:
 
 // Exceptional low ilvl
