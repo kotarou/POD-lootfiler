@@ -1594,12 +1594,13 @@ ItemDisplay[NMAG !RW CL1 SOCK=1]:
 ItemDisplay[NMAG !RW CL1 ETH]:
 
 // Barbarian Helms
-ItemDisplay[NMAG CL2 !RW SOCK=1]:
-ItemDisplay[NMAG CL2 !RW ETH]:
-ItemDisplay[NMAG !RW CL2 SOCK>1 !ETH]: 
+ItemDisplay[NMAG (ELT OR EXC) CL2 !RW SOCK=1]:
+ItemDisplay[NMAG (ELT OR EXC) CL2 !RW ETH]:
+// ItemDisplay[NMAG NORM CL2 !RW !ETH SOCK=1]: 
 
 // Paladin Shields
-ItemDisplay[NMAG !RW CL3 (SOCK=1 OR RES<20) ILVL>55]:
+ItemDisplay[NMAG !RW CL3 SOCK=1 ILVL>55]:
+ItemDisplay[NMAG !RW CL3 !SOCK=4 !SOCK=3 RES<20 ED<10 ILVL>55]:
 
 // Assassin Claws - Normal
 ItemDisplay[NMAG !RW ILVL>26 ktr]:
