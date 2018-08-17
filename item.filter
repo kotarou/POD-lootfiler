@@ -228,6 +228,10 @@ ItemDisplay[SUP DEF>249 (SOCK=0 OR SOCK=4) aar]: %RED%lld %WHITE%%NAME% %GRAY%[%
 ItemDisplay[SUP DEF>149 (SOCK=0 OR SOCK=4) gth]: %RED%lld %WHITE%%NAME% %GRAY%[%SOCKETS%]
 ItemDisplay[SUP ED=15 (SOCK=0 OR SOCK=3) (brs OR ltp)]: %RED%lld %WHITE%%NAME% %GRAY%[%SOCKETS%]
 
+// ETH armours
+ItemDisplay[ETH DEF>249 (SOCK=0 OR SOCK=4) aar]: %RED%lld %WHITE%%NAME% %GRAY%[%SOCKETS%]
+ItemDisplay[ETH DEF>149 (SOCK=0 OR SOCK=4) gth]: %RED%lld %WHITE%%NAME% %GRAY%[%SOCKETS%]
+
 // Dueling helms
 ItemDisplay[SUP ED>10 !ETH (SOCK=0 OR SOCK=3) (msk OR crn)]: %RED%lld %WHITE%%NAME% %GRAY%[%SOCKETS%]
 
@@ -676,8 +680,8 @@ ItemDisplay[(crs OR bsd) NMAG SOCK=4 CLVL<95]: %DGREEN%%NAME% %GRAY%[%SOCKETS%]
 ItemDisplay[(crs OR bsd) NMAG SOCK=4 CLVL>94]: 
 
 // Insight & Infinity - Thresher, Giant Thresher, ETH elite 4os polearms
-ItemDisplay[NMAG ETH SOCK=4 7s8]: %PURPLE% ETH %NAME% %RED%[%SOCKETS%]
-ItemDisplay[NMAG ETH SOCK=4 7wc]: %RED%* %PURPLE%ETH %NAME%%RED% *%RED%[%SOCKETS%]
+ItemDisplay[NMAG ETH (SOCK=4 OR SOCK=0) 7s8]: %PURPLE% ETH %NAME% %RED%[%SOCKETS%]
+ItemDisplay[NMAG ETH (SOCK=4 OR SOCK=0) 7wc]: %RED%* %PURPLE%ETH %NAME%%RED% *%RED%[%SOCKETS%]
 ItemDisplay[NMAG ETH SOCK=4 ELT WP8]: %DGREEN%ETH %NAME% %RED%[%SOCKETS%]
 
 ItemDisplay[NMAG !ETH SOCK=4 7s8]: %DGREEN% %NAME% %RED%[%SOCKETS%]
@@ -1387,7 +1391,7 @@ ItemDisplay[NMAG !RW ILVL>44 brs]:
 ItemDisplay[NMAG !RW ILVL>44 spl]:
 ItemDisplay[NMAG !RW ILVL>44 plt]:
 ItemDisplay[NMAG !RW ILVL>44 fld]:
-ItemDisplay[NMAG !RW ILVL>44 gth]:
+ItemDisplay[NMAG !RW ILVL>44 gth SOCK>0 SOCK<4]:
 ItemDisplay[NMAG !RW ILVL>44 ful]:
 ItemDisplay[NMAG !RW ILVL>44 SOCK!=1 SOCK<4 aar]:
 ItemDisplay[NMAG !RW ILVL>44 SOCK<3 ltp]:
