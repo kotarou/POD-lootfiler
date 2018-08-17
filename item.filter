@@ -216,8 +216,8 @@ ItemDisplay[skz]: %ORANGE%P SKULL
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 // Good weapon bases
-ItemDisplay[SUP wax (SOCK==0 OR SOCK==6)]: %RED% lld %DGREEN% Sup. War Axe %GRAY%[%SOCKETS%] 
-ItemDisplay[SUP ETH wax (SOCK==0 OR SOCK==6)]: %PURPLE% lld %DGREEN% ETH Sup. War Axe %GRAY%[%SOCKETS%] 
+ItemDisplay[SUP wax (SOCK=0 OR SOCK=6)]: %RED% lld %DGREEN% Sup. War Axe %GRAY%[%SOCKETS%] 
+ItemDisplay[SUP ETH wax (SOCK=0 OR SOCK=6)]: %PURPLE% lld %DGREEN% ETH Sup. War Axe %GRAY%[%SOCKETS%] 
 ItemDisplay[SUP ED>12 (btl OR 9cs) SOCK=3]: %RED% lld %DGREEN% Sup. Blade Talons %GRAY%[%SOCKETS%] 
 
 // Shout helm
@@ -301,7 +301,7 @@ ItemDisplay[CL1 NORM SK229>1 SK225>1]: %RED%Meatball Pelt %GRAY%[%SOCKETS%]
 ItemDisplay[CL1 NORM (SK229>1 OR SK225>1)]: %DGREEN%Meatball Pelt %GRAY%[%SOCKETS%]
 
 // Paladin Shields - high res or good tohit
-ItemDisplay[CL3 NMAG NORM (RES>20 OR ITEMSTAT19>60) SOCK!=1 SOCK!=2]: %DGREEN%%NAME% %WHITE%[%SOCKETS%] 
+ItemDisplay[CL3 NMAG NORM (RES>20 OR ITEMSTAT19>60) !SOCK=1 !SOCK=2]: %DGREEN%%NAME% %WHITE%[%SOCKETS%] 
 
 // Barb hem general
 ItemDisplay[CL2 NMAG ILVL<25 !SOCK=1]: %NAME%%GRAY%[%SOCKETS%]
@@ -1062,8 +1062,8 @@ ItemDisplay[RARE lbl !ID CLVL>40]:
 ItemDisplay[NMAG !RW ILVL>14 hax]:
 ItemDisplay[NMAG !RW ILVL>14 axe]:
 ItemDisplay[NMAG !RW ILVL>14 2ax]:
-ItemDisplay[NMAG !RW ILVL>14 mpi]:
-// ItemDisplay[NMAG !RW ILVL>14 wax]:
+ItemDisplay[NMAG !RW ILVL>14 mpi SOCK<6 SOCK>0]:
+ItemDisplay[NMAG !RW ILVL>14 wax SOCK<6 SOCK>0]:
 ItemDisplay[NMAG !RW ILVL>14 lax]:
 ItemDisplay[NMAG !RW ILVL>14 bax]:
 ItemDisplay[NMAG !RW ILVL>14 btx]:
@@ -1104,7 +1104,7 @@ ItemDisplay[NMAG !RW ILVL>14 clb]:
 ItemDisplay[NMAG !RW ILVL>14 spc]:
 ItemDisplay[NMAG !RW ILVL>14 mac]:
 ItemDisplay[NMAG !RW ILVL>14 mst]:
-// ItemDisplay[NMAG !RW ILVL>14 fla]:
+ItemDisplay[NMAG !RW ILVL>14 fla SOCK>0 SOCK<6]:
 ItemDisplay[NMAG !RW ILVL>14 whm]:
 ItemDisplay[NMAG !RW ILVL>14 mau]:
 ItemDisplay[NMAG !RW ILVL>14 gma]:
@@ -1286,11 +1286,11 @@ ItemDisplay[NMAG !RW ILVL>14 SOCK<4 9h9]:
 ItemDisplay[NMAG !RW ILVL>14 SOCK<4 9wc]:
 
 ItemDisplay[NMAG !RW ILVL>14 7o7]:
-ItemDisplay[NMAG !RW ILVL>14 SOCK<4 SOCK!=0 7vo]:
-ItemDisplay[NMAG !RW ILVL>14 SOCK<4 SOCK!=0 7s8]:
-ItemDisplay[NMAG !RW ILVL>14 SOCK<4 SOCK!=0 7pa]:
-ItemDisplay[NMAG !RW ILVL>14 SOCK<4 SOCK!=0 7h7]:
-ItemDisplay[NMAG !RW ILVL>14 SOCK<4 SOCK!=0 7wc]:
+ItemDisplay[NMAG !RW ILVL>14 SOCK<4 SOCK>0 7vo]:
+ItemDisplay[NMAG !RW ILVL>14 SOCK<4 SOCK>0 7s8]:
+ItemDisplay[NMAG !RW ILVL>14 SOCK<4 SOCK>0 7pa]:
+ItemDisplay[NMAG !RW ILVL>14 SOCK<4 SOCK>0 7h7]:
+ItemDisplay[NMAG !RW ILVL>14 SOCK<4 SOCK>0 7wc]:
 
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -1393,7 +1393,7 @@ ItemDisplay[NMAG !RW ILVL>44 plt]:
 ItemDisplay[NMAG !RW ILVL>44 fld]:
 ItemDisplay[NMAG !RW ILVL>44 gth SOCK>0 SOCK<4]:
 ItemDisplay[NMAG !RW ILVL>44 ful]:
-ItemDisplay[NMAG !RW ILVL>44 SOCK!=1 SOCK<4 aar]:
+ItemDisplay[NMAG !RW ILVL>44 !SOCK=1 SOCK<4 aar]:
 ItemDisplay[NMAG !RW ILVL>44 SOCK<3 ltp]:
 
 // Exceptional high ilvl
@@ -1444,7 +1444,7 @@ ItemDisplay[NMAG !RW ILVL<45 plt]:
 ItemDisplay[NMAG !RW ILVL<45 fld]:
 ItemDisplay[NMAG !RW ILVL<45 gth]:
 ItemDisplay[NMAG !RW ILVL<45 ful]:
-ItemDisplay[NMAG !RW ILVL<45 SOCK!=1 SOCK<4 aar]:
+ItemDisplay[NMAG !RW ILVL<45 !SOCK=1 SOCK<4 aar]:
 ItemDisplay[NMAG !RW ILVL<45 SOCK<3 ltp]:
 
 // Exceptional low ilvl
@@ -1598,12 +1598,13 @@ ItemDisplay[NMAG !RW CL1 SOCK=1]:
 ItemDisplay[NMAG !RW CL1 ETH]:
 
 // Barbarian Helms
-ItemDisplay[NMAG CL2 !RW SOCK=1]:
-ItemDisplay[NMAG CL2 !RW ETH]:
-ItemDisplay[NMAG !RW CL2 SOCK>1 !ETH]: 
+ItemDisplay[NMAG (ELT OR EXC) CL2 !RW SOCK=1]:
+ItemDisplay[NMAG (ELT OR EXC) CL2 !RW ETH]:
+// ItemDisplay[NMAG NORM CL2 !RW !ETH SOCK=1]: 
 
 // Paladin Shields
-ItemDisplay[NMAG !RW CL3 (SOCK=1 OR RES<20) ILVL>55]:
+ItemDisplay[NMAG !RW CL3 SOCK=1 ILVL>55]:
+ItemDisplay[NMAG !RW CL3 !SOCK=4 !SOCK=3 RES<20 ED<10 ILVL>55]:
 
 // Assassin Claws - Normal
 ItemDisplay[NMAG !RW ILVL>26 ktr]:
