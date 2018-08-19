@@ -235,31 +235,35 @@ ItemDisplay[ETH DEF>149 (SOCK=0 OR SOCK=4) gth]: %RED%lld %WHITE%%NAME% %GRAY%[%
 // Dueling helms
 ItemDisplay[SUP ED>10 !ETH (SOCK=0 OR SOCK=3) (msk OR crn)]: %RED%lld %WHITE%%NAME% %GRAY%[%SOCKETS%]
 
+// socketable
+ItemDisplay[!ETH SUP (SOCK=0 OR SOCK=3) lrg]: %RED%lld %YELLOW%%NAME%
+
+
 // Corruptable dueling rares 
 // - armour
 ItemDisplay[!ETH !ID RARE (brs OR ltp OR aar OR gth)]: %RED%lld? %YELLOW%%NAME%
 // - shields
-ItemDisplay[!ETH !ID RARE (spk OR tow OR bsh)]: %RED%lld? %YELLOW%%NAME%
+ItemDisplay[!ETH !ID RARE (spk OR tow OR bsh OR lrg)]: %RED%lld? %YELLOW%%NAME%
 // - assassin claws
 ItemDisplay[!ETH !ID RARE (btl OR 9cs)]: %RED%lld? %YELLOW%%NAME%
 
 // Assorted imbueable dueling items
 // ETH throwing spear
-ItemDisplay[NMAG ETH !RW tsp]: %GREEN%%NAME% %GRAY%%lld imbue%
+ItemDisplay[NMAG ETH !RW tsp]: %GREEN%%NAME% %GRAY%lld imbue
 // ETH crown
-ItemDisplay[NMAG ETH !RW SOCK=0 crn]: %GREEN%%NAME% %GRAY%%lld imbue%
+ItemDisplay[NMAG ETH !RW SOCK=0 crn]: %GREEN%%NAME% %GRAY%lld imbue
 // ETH ancient armor
-ItemDisplay[NMAG ETH !RW SOCK=0 aar]: %GREEN%%NAME% %GRAY%%lld imbue%
+ItemDisplay[NMAG ETH !RW SOCK=0 aar]: %GREEN%%NAME% %GRAY%lld imbue
 // ETH war hammer
-ItemDisplay[NMAG ETH !RW SOCK=0 whm]: %GREEN%%NAME% %GRAY%%lld imbue%
+ItemDisplay[NMAG ETH !RW SOCK=0 whm]: %GREEN%%NAME% %GRAY%lld imbue
 // ETH blade talons 
-ItemDisplay[NMAG ETH !RW SOCK=0 btl]: %GREEN%%NAME% %GRAY%%lld imbue%
+ItemDisplay[NMAG ETH !RW SOCK=0 btl]: %GREEN%%NAME% %GRAY%lld imbue
 // ETH flamberge
-ItemDisplay[NMAG ETH !RW SOCK=0 flb]: %GREEN%%NAME% %GRAY%%lld imbue%
+ItemDisplay[NMAG ETH !RW SOCK=0 flb]: %GREEN%%NAME% %GRAY%lld imbue
 // ETH great sword
-ItemDisplay[NMAG ETH !RW SOCK=0 gsd]: %GREEN%%NAME% %GRAY%%lld imbue%
+ItemDisplay[NMAG ETH !RW SOCK=0 gsd]: %GREEN%%NAME% %GRAY%lld imbue
 // ETH spiked shield for smiter
-ItemDisplay[NMAG ETH !RW SOCK=0 spk]: %GREEN%%NAME% %GRAY%%lld imbue%
+ItemDisplay[NMAG ETH !RW SOCK=0 spk]: %GREEN%%NAME% %GRAY%lld imbue
 
 // Uniques
 // Biggin's bonnet
@@ -308,7 +312,7 @@ ItemDisplay[CL2 NMAG ILVL<25 !SOCK=1]: %NAME%%GRAY%[%SOCKETS%]
 
 // vlld shoppables
 // - Vulpine Bone Shield of Deflecting
-ItemDisplay[MAG bsh ITEMSTAT114>6 ITEMSTAT102=30]: %RED%* %PURPLE%VBOD %RED%*
+ItemDisplay[MAG bsh (ITEMSTAT114>6 and ITEMSTAT102=30)]: %RED%* %PURPLE%VBOD %RED%*
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // Uniques - Helms
