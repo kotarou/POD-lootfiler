@@ -279,7 +279,7 @@ ItemDisplay[UNI !ID spk]: %RED%* Swordback Hold%RED% *
 // Gnasher hand axe
 ItemDisplay[UNI !ID hax]: %RED%* %PURPLE%Gnasher axe%RED% *
 // Crushflange
-ItemDisplay[UNI !ID mac]: %RED%* %Crushflange%RED% *
+ItemDisplay[UNI !ID mac]: %RED%* Crushflange%RED% *
 // Bonesnap
 ItemDisplay[UNI !ID mau]: %RED%* Bonesnap%RED% *
 // Rogue's bow
